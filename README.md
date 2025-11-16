@@ -281,15 +281,15 @@ These three locations hold **>75%** of total inventory, and Subassembly is the m
 
 ## 6. Dashboards (Power BI)
 
-![Dashboard – Production Overview](docs/Production Overview Dashboard.png)
+![Dashboard – Production Overview](docs/Production%20Overview%20Dashboard.png)
 
 *Figure  – Power BI dashboard: Production Overview*
 
-![Dashboard – Quality Control](docs/Production Quality Control.png)
+![Dashboard – Quality Control](docs/Production%20Quality%20Control.png)
 
 *Figure  – Power BI dashboard: Production Quality Control*
 
-![Dashboard – Performance Control](docs/Production Performance Control.png)
+![Dashboard – Performance Control](docs/Production%20Performance%20Control.png)
 
 *Figure  – Power BI dashboard: Production Performance Control*
 The project provides three main dashboards for the **Production Manager**:
