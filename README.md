@@ -49,6 +49,7 @@ Source: **AdventureWorks2019 – Production schema**, 2011–2014.
 
 ### 2.1. Source tables
 ![Source ERD](docs/images/source-erd.png)
+
 *Figure 3 – Source system ERD (Production schema: WorkOrder, WorkOrderRouting, Product, Location, ScrapReason, etc.)*
 - **Production.WorkOrder**
   - WorkOrderID, ProductID, OrderQty, ScrappedQty
@@ -83,6 +84,7 @@ Source: **AdventureWorks2019 – Production schema**, 2011–2014.
 
 ### 2.2. Data warehouse (Star Schema)
 ![Star schema](docs/Data-Warehouse-Model-Star-Schema.png) 
+
 *Figure 4 – Star schema for the Manufacturing data mart (Fact_Manufacturing + Dim_Product, Dim_Location, Dim_ScrapReason, Dim_Date)*
 The manufacturing data mart is modeled as a **star schema** with:
 
