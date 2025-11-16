@@ -48,7 +48,7 @@ The manufacturing module faces typical challenges:
 Source: **AdventureWorks2019 – Production schema**, 2011–2014.
 
 ### 2.1. Source tables
-![Source ERD](docs/images/source-erd.png)
+![Source ERD](docs/source-erd.png)
 
 *Figure 3 – Source system ERD (Production schema: WorkOrder, WorkOrderRouting, Product, Location, ScrapReason, etc.)*
 - **Production.WorkOrder**
@@ -133,7 +133,7 @@ The manufacturing data mart is modeled as a **star schema** with:
 ---
 
 ## 3. ETL Process (SSIS)
-![ETL overview](docs/images/Data-mapping-diagram.png)
+![ETL overview](docs/Data-mapping-diagram.png)
 *Figure 5 – Overall ETL control flow for Manufacturing data mart*
 The ETL layer is implemented with **SQL Server Integration Services (SSIS)**.
 
@@ -169,7 +169,7 @@ Specific notes:
   - Loaded via SSIS into Dim_Date.
 
 ### 3.2. Fact ETL – Fact_Manufacturing
-![ETL Fact_Manufacturing](docs/images/ETL-Fact-Manufacturing.png)
+![ETL Fact_Manufacturing](docs/ETL-Fact-Manufacturing.png)
 *Figure 7 – SSIS Data Flow for Fact_Manufacturing (Lookup + Conditional Split)*
 Two strategies:
 
@@ -278,13 +278,13 @@ These three locations hold **>75%** of total inventory, and Subassembly is the m
 
 ## 6. Dashboards (Power BI)
 
-![Dashboard – Production Overview](docs/images/dashboard-production-overview.png)
+![Dashboard – Production Overview](docs/dashboard-production-overview.png)
 *Figure  – Power BI dashboard: Production Overview*
 
-![Dashboard – Quality Control](docs/images/dashboard-quality-control.png)
+![Dashboard – Quality Control](docs/dashboard-quality-control.png)
 *Figure  – Power BI dashboard: Production Quality Control*
 
-![Dashboard – Performance Control](docs/images/dashboard-performance-control.png)
+![Dashboard – Performance Control](docs/dashboard-performance-control.png)
 *Figure  – Power BI dashboard: Production Performance Control*
 The project provides three main dashboards for the **Production Manager**:
 
