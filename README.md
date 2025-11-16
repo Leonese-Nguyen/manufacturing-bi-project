@@ -138,7 +138,7 @@ The manufacturing data mart is modeled as a **star schema** with:
 The ETL layer is implemented with **SQL Server Integration Services (SSIS)**.
 
 ### 3.1. Dimension ETL
-![ETL Dim_Product](docs/images/ETL_Dim_Product.png)
+![ETL Dim_Product](docs/ETL_Dim_Product.png)
 *Figure 6 – Sample SSIS Data Flow for Dim_Product (Merge Join + SCD)*
 Common steps:
 
