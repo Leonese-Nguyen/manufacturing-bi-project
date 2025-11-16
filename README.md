@@ -1,4 +1,4 @@
-# AdventureWorks – Manufacturing BI & DSS (AdventureWorks2019)
+# AdventureWorks – Manufacturing BI & DSS
 
 **Author:**   
 **Tech stack:** SQL Server, SSIS, SSAS, Power BI
