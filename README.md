@@ -13,6 +13,7 @@ It covers:
 - Business insights & recommendations for production, quality, and performance
 
 🔗 **Online dashboard:** (https://app.powerbi.com/view?r=eyJrIjoiOWFmYjFhNzAtZDhkZC00OGNiLWFmOTItMzI1YjE5MTc1ZTYwIiwidCI6IjI1ODRiOGI5LTU2MTctNDIwYi1hYTI0LWMyYTc4MDU2ZWNjMyIsImMiOjEwfQ%3D%3D)
+
 📄 **Full report (PDF):** see `docs\FinalProject_Manufacturing.pdf`
 
 ---
@@ -79,6 +80,7 @@ Source: **AdventureWorks2019 – Production schema**, 2011–2014.
 ---
 
 ### 2.2. Data warehouse (Star Schema)
+![Star schema](docs/Data-Warehouse-Model-Star-Schema.png) 
 
 The manufacturing data mart is modeled as a **star schema** with:
 
