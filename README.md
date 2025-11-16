@@ -14,7 +14,8 @@ It covers:
 
 🔗 **Online dashboard:** (https://app.powerbi.com/view?r=eyJrIjoiOWFmYjFhNzAtZDhkZC00OGNiLWFmOTItMzI1YjE5MTc1ZTYwIiwidCI6IjI1ODRiOGI5LTU2MTctNDIwYi1hYTI0LWMyYTc4MDU2ZWNjMyIsImMiOjEwfQ%3D%3D)
 
-📄 **Full report (PDF):** see `docs\FinalProject_Manufacturing.pdf`
+📄**Full report (PDF):** see `docs/FinalProject_Manufacturing.pdf`
+
 
 ---
 
@@ -47,7 +48,8 @@ The manufacturing module faces typical challenges:
 Source: **AdventureWorks2019 – Production schema**, 2011–2014.
 
 ### 2.1. Source tables
-
+![Source ERD](docs/images/source-erd.png)
+*Figure 3 – Source system ERD (Production schema: WorkOrder, WorkOrderRouting, Product, Location, ScrapReason, etc.)*
 - **Production.WorkOrder**
   - WorkOrderID, ProductID, OrderQty, ScrappedQty
   - StartDate, EndDate, DueDate
@@ -81,7 +83,7 @@ Source: **AdventureWorks2019 – Production schema**, 2011–2014.
 
 ### 2.2. Data warehouse (Star Schema)
 ![Star schema](docs/Data-Warehouse-Model-Star-Schema.png) 
-
+*Figure 4 – Star schema for the Manufacturing data mart (Fact_Manufacturing + Dim_Product, Dim_Location, Dim_ScrapReason, Dim_Date)*
 The manufacturing data mart is modeled as a **star schema** with:
 
 - **Fact_Manufacturing**
@@ -129,11 +131,13 @@ The manufacturing data mart is modeled as a **star schema** with:
 ---
 
 ## 3. ETL Process (SSIS)
-
+![ETL overview](docs/images/Data-mapping-diagram.png)
+*Figure 5 – Overall ETL control flow for Manufacturing data mart*
 The ETL layer is implemented with **SQL Server Integration Services (SSIS)**.
 
 ### 3.1. Dimension ETL
-
+![ETL Dim_Product](docs/images/ETL_Dim_Product.png)
+*Figure 6 – Sample SSIS Data Flow for Dim_Product (Merge Join + SCD)*
 Common steps:
 
 1. **Extract** from source tables using **OLE DB Source**.
@@ -163,7 +167,8 @@ Specific notes:
   - Loaded via SSIS into Dim_Date.
 
 ### 3.2. Fact ETL – Fact_Manufacturing
-
+![ETL Fact_Manufacturing](docs/images/ETL-Fact-Manufacturing.png)
+*Figure 7 – SSIS Data Flow for Fact_Manufacturing (Lookup + Conditional Split)*
 Two strategies:
 
 1. **Full Load**
@@ -271,6 +276,14 @@ These three locations hold **>75%** of total inventory, and Subassembly is the m
 
 ## 6. Dashboards (Power BI)
 
+![Dashboard – Production Overview](docs/images/dashboard-production-overview.png)
+*Figure  – Power BI dashboard: Production Overview*
+
+![Dashboard – Quality Control](docs/images/dashboard-quality-control.png)
+*Figure  – Power BI dashboard: Production Quality Control*
+
+![Dashboard – Performance Control](docs/images/dashboard-performance-control.png)
+*Figure  – Power BI dashboard: Production Performance Control*
 The project provides three main dashboards for the **Production Manager**:
 
 1. **Production Overview**
