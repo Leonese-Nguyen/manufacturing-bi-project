@@ -134,11 +134,13 @@ The manufacturing data mart is modeled as a **star schema** with:
 
 ## 3. ETL Process (SSIS)
 ![ETL overview](docs/Data-mapping-diagram.png)
+
 *Figure 5 – Overall ETL control flow for Manufacturing data mart*
 The ETL layer is implemented with **SQL Server Integration Services (SSIS)**.
 
 ### 3.1. Dimension ETL
 ![ETL Dim_Product](docs/ETL_Dim_Product.png)
+
 *Figure 6 – Sample SSIS Data Flow for Dim_Product (Merge Join + SCD)*
 Common steps:
 
@@ -170,6 +172,7 @@ Specific notes:
 
 ### 3.2. Fact ETL – Fact_Manufacturing
 ![ETL Fact_Manufacturing](docs/ETL-Fact-Manufacturing.png)
+
 *Figure 7 – SSIS Data Flow for Fact_Manufacturing (Lookup + Conditional Split)*
 Two strategies:
 
@@ -278,13 +281,16 @@ These three locations hold **>75%** of total inventory, and Subassembly is the m
 
 ## 6. Dashboards (Power BI)
 
-![Dashboard – Production Overview](docs/dashboard-production-overview.png)
+![Dashboard – Production Overview](docs/Production Overview Dashboard.png)
+
 *Figure  – Power BI dashboard: Production Overview*
 
-![Dashboard – Quality Control](docs/dashboard-quality-control.png)
+![Dashboard – Quality Control](docs/Production Quality Control.png)
+
 *Figure  – Power BI dashboard: Production Quality Control*
 
-![Dashboard – Performance Control](docs/dashboard-performance-control.png)
+![Dashboard – Performance Control](docs/Production Performance Control.png)
+
 *Figure  – Power BI dashboard: Production Performance Control*
 The project provides three main dashboards for the **Production Manager**:
 
