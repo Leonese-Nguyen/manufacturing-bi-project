@@ -14,7 +14,7 @@ It covers:
 
 🔗 **Online dashboard:** (https://app.powerbi.com/view?r=eyJrIjoiOWFmYjFhNzAtZDhkZC00OGNiLWFmOTItMzI1YjE5MTc1ZTYwIiwidCI6IjI1ODRiOGI5LTU2MTctNDIwYi1hYTI0LWMyYTc4MDU2ZWNjMyIsImMiOjEwfQ%3D%3D)
 
-📄**Full report (PDF):** see `docs/FinalProject_Manufacturing.pdf`
+📄**Full report (PDF):** [Full report (PDF)](docs/FinalProject_Manufacturing.pdf)
 
 
 ---
