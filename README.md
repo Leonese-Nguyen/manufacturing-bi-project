@@ -12,7 +12,7 @@ It covers:
 - Interactive dashboards with Power BI
 - Business insights & recommendations for production, quality, and performance
 
-🔗 **Online dashboard:** [Full report (Power BI)](https://app.powerbi.com/view?r=eyJrIjoiOWFmYjFhNzAtZDhkZC00OGNiLWFmOTItMzI1YjE5MTc1ZTYwIiwidCI6IjI1ODRiOGI5LTU2MTctNDIwYi1hYTI0LWMyYTc4MDU2ZWNjMyIsImMiOjEwfQ%3D%3D)
+🔗 **Online dashboard:** [Dashboard (Power BI)](https://app.powerbi.com/view?r=eyJrIjoiOWFmYjFhNzAtZDhkZC00OGNiLWFmOTItMzI1YjE5MTc1ZTYwIiwidCI6IjI1ODRiOGI5LTU2MTctNDIwYi1hYTI0LWMyYTc4MDU2ZWNjMyIsImMiOjEwfQ%3D%3D)
 
 📄**Full report (PDF):** [Full report (PDF)](docs/FinalProject_Manufacturing.pdf)
 
